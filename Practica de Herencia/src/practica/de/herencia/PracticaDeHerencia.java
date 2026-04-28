@@ -205,13 +205,13 @@ public class PracticaDeHerencia {
 
                 case 5:
                     for (Empleado e : empleados) {
-                        e.trabajar(); // Polimorfismo
+                        e.trabajar(); 
                     }
                     break;
 
                 case 6:
                     for (Empleado e : empleados) {
-                        System.out.println(e.nombre + " - Lps " + e.getSalario());
+                        System.out.println(e.nombre + " Lps. " + e.getSalario());
                     }
                     break;
 

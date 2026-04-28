@@ -20,7 +20,7 @@ public class Empleado extends Persona {
     }
 
     public void trabajar() {
-        System.out.println(nombre + " está trabajando.");
+        System.out.println(nombre + " esta trabajando.");
     }
 
     public double getSalario() {

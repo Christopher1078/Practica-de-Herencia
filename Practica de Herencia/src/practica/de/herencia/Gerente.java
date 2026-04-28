@@ -1,6 +1,5 @@
 package practica.de.herencia;
 
-import java.util.Date;
 
 public class Gerente extends Empleado implements Evaluador, Capacitador{
     private String departamento;
@@ -8,11 +7,7 @@ public class Gerente extends Empleado implements Evaluador, Capacitador{
     private double presupuesto;
     private String frecuenciaReuniones;
 
-    public Gerente(String nombre, int edad, String identidad, String direccion, String telefono,
-                   double salario, String idEmpleado, String fechaContratacion,
-                   String tipoContrato, String sede,
-                   String departamento, int personasCargo,
-                   double presupuesto, String frecuenciaReuniones) {
+    public Gerente(String nombre, int edad, String identidad, String direccion, String telefono, double salario, String idEmpleado, String fechaContratacion, String tipoContrato, String sede, String departamento, int personasCargo, double presupuesto, String frecuenciaReuniones) {
 
         super(nombre, edad, identidad, direccion, telefono,
               salario, idEmpleado, fechaContratacion, tipoContrato, sede);
@@ -25,16 +20,16 @@ public class Gerente extends Empleado implements Evaluador, Capacitador{
 
     @Override
     public void trabajar() {
-        System.out.println(nombre + " está coordinando el departamento de " + departamento);
+        System.out.println(nombre + " esta coordinando el departamento de " + departamento);
     }
 
     @Override
     public void evaluarDesempeno() {
-        System.out.println(nombre + " está evaluando empleados.");
+        System.out.println(nombre + " esta evaluando empleados.");
     }
 
     @Override
     public void impartirCapacitaciones() {
-        System.out.println(nombre + " está impartiendo capacitación.");
+        System.out.println(nombre + " esta impartiendo capacitación.");
     }
 }
